@@ -32,7 +32,6 @@ closeDialogButton.addEventListener('click', () => {
 // Получаем форму заявки.
 const orderForm = document.getElementById('order-form');
 
-// Получаем сообщение об успешной отправке.
 const successMessage = document.getElementById('success-message');
 
 // Обрабатываем отправку формы.
@@ -64,7 +63,8 @@ orderForm.addEventListener('submit', (event) => {
   }
 
   // Показываем сообщение об успешной отправке.
-  successMessage.hidden = false;
+  successMessage.hidden = false
+
 
   // Очищаем форму.
   orderForm.reset();
