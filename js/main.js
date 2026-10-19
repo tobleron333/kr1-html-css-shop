@@ -78,3 +78,21 @@ if (orderForm) {
     }
   });
 }
+
+// Кнопка Наверх
+const scrollTopButton = document.getElementById('scroll-top');
+
+if (scrollTopButton) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollTopButton.classList.add('scroll-top--visible');
+    } else {
+      scrollTopButton.classList.remove('scroll-top--visible');
+    }
+  });
+
+  scrollTopButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+}
