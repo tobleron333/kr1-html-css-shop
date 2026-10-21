@@ -10,6 +10,7 @@
   <meta name="description" content="Каталог товаров учебного интернет-магазина.">
   <title>Каталог товаров — Учебный интернет-магазин</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
   <meta property="og:type" content="website">
   <meta property="og:title" content="Учебный интернет-магазин">
   <meta property="og:description" content="Учебный frontend-проект интернет-магазина.">
@@ -108,48 +109,54 @@
       <div class="products-grid">
 
         <article class="product-card">
-          <h3 class="product-card__title">Товар 1</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1000 руб.</p>
-          <a class="button button--primary" href="product.html">Подробнее</a>
+          <img class="product-card__image" src="images/product-1.jpg" alt="Беспроводные наушники" width="400" height="300" loading="lazy">
+          <h3 class="product-card__title">Беспроводные наушники</h3>
+          <p class="product-card__description">Bluetooth 5.3, активное шумоподавление, до 30 часов работы.</p>
+          <p class="product-card__price">Цена: 4990 руб.</p>
+          <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
         </article>
 
         <article class="product-card">
-          <h3 class="product-card__title">Товар 2</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 1500 руб.</p>
-          <a class="button button--primary" href="product.html">Подробнее</a>
+          <img class="product-card__image" src="images/product-2.jpg" alt="Умные часы" width="400" height="300" loading="lazy">
+          <h3 class="product-card__title">Умные часы</h3>
+          <p class="product-card__description">AMOLED-экран, пульсометр, защита IP68.</p>
+          <p class="product-card__price">Цена: 8990 руб.</p>
+          <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
         </article>
 
         <article class="product-card">
-          <h3 class="product-card__title">Товар 3</h3>
-          <p class="product-card__description">Краткое описание учебного товара.</p>
-          <p class="product-card__price">Цена: 2000 руб.</p>
-          <a class="button button--primary" href="product.html">Подробнее</a>
+          <img class="product-card__image" src="images/product-3.jpg" alt="Портативная колонка" width="400" height="300" loading="lazy">
+          <h3 class="product-card__title">Портативная колонка</h3>
+          <p class="product-card__description">20 Вт, IPX7, до 12 часов работы.</p>
+          <p class="product-card__price">Цена: 3490 руб.</p>
+          <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
         </article>
 
-          <article class="product-card product-card--new">
-            <h3 class="product-card__title">Товар 4</h3>
-            <span class="product-card__badge product-card__badge--new">Новинка</span>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 2500 руб.</p>
-            <a class="button button--primary" href="product.html#product-4">Подробнее</a>
-          </article>
+        <article class="product-card product-card--new">
+          <span class="product-card__badge product-card__badge--new">Новинка</span>
+          <img class="product-card__image" src="images/product-4.jpg" alt="Механическая клавиатура" width="400" height="300" loading="lazy">
+          <h3 class="product-card__title">Механическая клавиатура</h3>
+          <p class="product-card__description">Переключатели Red, RGB-подсветка, алюминиевый корпус.</p>
+          <p class="product-card__price">Цена: 6490 руб.</p>
+          <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+        </article>
 
-          <article class="product-card product-card--discount">
-            <h3 class="product-card__title">Товар 5</h3>
-            <span class="product-card__badge product-card__badge--discount">Скидка</span>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 3000 руб.</p>
-            <a class="button button--primary" href="product.html#product-5">Подробнее</a>
-          </article>
+        <article class="product-card product-card--discount">
+          <span class="product-card__badge product-card__badge--discount">Скидка</span>
+          <img class="product-card__image" src="images/product-5.jpg" alt="Игровая мышь" width="400" height="300" loading="lazy">
+          <h3 class="product-card__title">Игровая мышь</h3>
+          <p class="product-card__description">Сенсор 26000 DPI, 8 программируемых кнопок, RGB.</p>
+          <p class="product-card__price">Цена: 2990 руб.</p>
+          <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+        </article>
 
-          <article class="product-card">
-            <h3 class="product-card__title">Товар 6</h3>
-            <p class="product-card__description">Краткое описание учебного товара.</p>
-            <p class="product-card__price">Цена: 3500 руб.</p>
-            <a class="button button--primary" href="product.html">Подробнее</a>
-          </article>
+        <article class="product-card">
+          <img class="product-card__image" src="images/product-6.jpg" alt="Внешний SSD-диск" width="400" height="300" loading="lazy">
+          <h3 class="product-card__title">Внешний SSD-диск</h3>
+          <p class="product-card__description">1 ТБ, USB 3.2, скорость чтения до 1050 МБ/с.</p>
+          <p class="product-card__price">Цена: 7990 руб.</p>
+          <a class="button button--primary product-card__button" href="product.html">Подробнее</a>
+        </article>
 
       </div>
     </section>

@@ -84,11 +84,12 @@ const scrollTopButton = document.getElementById('scroll-top');
 
 if (scrollTopButton) {
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) {
-      scrollTopButton.classList.add('scroll-top--visible');
-    } else {
-      scrollTopButton.classList.remove('scroll-top--visible');
-    }
+    //if (window.scrollY > 300) {
+    //  scrollTopButton.classList.add('scroll-top--visible');
+    //} else {
+    //  scrollTopButton.classList.remove('scroll-top--visible');
+    //}
+    scrollTopButton.classList.add('scroll-top--visible');
   });
 
   scrollTopButton.addEventListener('click', (event) => {
